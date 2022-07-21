@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Karla";
+    color: #293462;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    border-radius: 20px 20px 0 0;
+    width: 350px;
+    height: 500px;
+    margin:100px auto;
+} 
+
+.top-card{
+    width: 350px;
+    height: 200px;
+    background-image:url("./illustration-hero.svg");
+    background-size: cover;
+
+    border-radius: 20px 20px 0 0;
+    margin:0;
+    box-shadow: 5px 9px 20px -2px rgba(0,0,0,0.56);
+}
+
+.top-card img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    box-shadow: 5px 9px 20px -2px rgba(0,0,0,0.56);
+}
+
+.bot-card{
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    border-radius:0 0 20px 20px ;
+    box-shadow: 5px 9px 20px -2px rgba(0,0,0,0.56);
+}
+
+.bot-card .texts{
+    padding: 40px;
+    
+}
+
+.bot-card .texts h1{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    
+}
+
+.price-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px 15px;
+    margin:0 20px;
+    margin-bottom: 20px;
+    background: #efeeee;
+    border-radius: 10px;
+
+}
+
+.price-cont{
+    align-items: center;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.price-card a{
+    text-decoration: none;
+
+}
+
+.price h2{
+    font-size: 18px;
+}
+
+.price h3{
+    font-size: 17px;
+    font-weight: 100;
+    opacity: .4;
+}
+
+.buttons{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons .btn-1{
+    background: #6c41e2;
+    padding:10px 0;
+    margin:0 25px;
+    border-radius: 10px;
+    color:#fff;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.buttons .btn-1:hover{
+    background: #4504f6;
+    transform: scale(1.03);
+}
+
+.buttons .btn-2{
+    padding:10px;
+    margin:auto;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #293462;
+    transition-timing-function: ease-in;
+}
+
+.buttons .btn-2:hover{
+    transform: scale(1.1);
+
+}
+
+.btn-3{
+    font-weight: bolder;
+    font-size: 14px;
+    opacity: .6;
+
+}
+
+.btn-3:hover {
+    transform: scale(1.1);
+} 
+
+
+
+@media (max-width:1440px) {
+    body{
+        background-image: url("./pattern-background-desktop.svg"); 
+        background-repeat: no-repeat;
+    }  
+}
+
+@media (max-width:375px) {
+    body{
+        background-image: url("./pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+    }   
+}
